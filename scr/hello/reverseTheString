@@ -1,0 +1,10 @@
+package hello;
+public class reverseTheString
+{      
+  public static void main(String[] args)      
+  {            
+    String str = "MyJava";    
+    System.out.println(recursiveMethod(str));    
+    //Output : avaJyM        
+    } 
+ }
