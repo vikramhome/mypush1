@@ -1,4 +1,4 @@
-<projectname="reverseTheString" basedir="." default="main">
+<project name="reverseTheString" basedir="." default="main">
 
     <target name="clean">
         <delete dir="build"/>
