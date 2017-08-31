@@ -1,4 +1,4 @@
-<project>
+<projectname="reverseTheString" basedir="." default="main">
 
     <target name="clean">
         <delete dir="build"/>
@@ -9,7 +9,7 @@
         <javac includeantruntime="false" srcdir="src" destdir="build/classes"/>
     </target>
 
-    <target name="jar">
+    <target name="jar" depends="compile">
         <mkdir dir="build/jar"/>
         <jar destfile="build/jar/reverseTheString.jar" basedir="build/classes">
             <manifest>
@@ -18,8 +18,10 @@
         </jar>
     </target>
 
-    <target name="run">
+    <target name="run" depends="jar">
         <java jar="build/jar/reverseTheString.jar" fork="true"/>
     </target>
+ <target name="clean-build" depends="clean,jar"/>
 
+<target name="main" depends="clean,run"/>
 </project>
