@@ -1,8 +1,8 @@
 public class reverseTheString
 {
-        public static void main(String[] args)
-        {   
-		String str = "MyJava";
+	public static void main(String[] args)
+        {
+		String str = new String("MyJava");
 		System.out.println(recursiveMethod(str));
 		//Output : avaJyM
 	}
